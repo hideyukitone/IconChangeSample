@@ -14,6 +14,8 @@
 		8DBA7C441FD00561007E5366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA7C421FD00561007E5366 /* LaunchScreen.storyboard */; };
 		8DBA7C4F1FD00561007E5366 /* IconChangeSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA7C4E1FD00561007E5366 /* IconChangeSampleTests.swift */; };
 		8DBA7C5A1FD00561007E5366 /* IconChangeSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA7C591FD00561007E5366 /* IconChangeSampleUITests.swift */; };
+		8DBA7C6D1FD0070B007E5366 /* redIcon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA7C6C1FD0070B007E5366 /* redIcon60@3x.png */; };
+		8DBA7C6F1FD00710007E5366 /* redIcon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA7C6E1FD00710007E5366 /* redIcon60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		8DBA7C551FD00561007E5366 /* IconChangeSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconChangeSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBA7C591FD00561007E5366 /* IconChangeSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconChangeSampleUITests.swift; sourceTree = "<group>"; };
 		8DBA7C5B1FD00561007E5366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBA7C6C1FD0070B007E5366 /* redIcon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon60@3x.png"; sourceTree = "<group>"; };
+		8DBA7C6E1FD00710007E5366 /* redIcon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon60@2x.png"; sourceTree = "<group>"; };
+		8DBA7C701FD01B31007E5366 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		8DBA7C711FD01B31007E5366 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		8DBA7C381FD00560007E5366 /* IconChangeSample */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA7C671FD006E9007E5366 /* icon */,
 				8DBA7C391FD00560007E5366 /* AppDelegate.swift */,
 				8DBA7C3B1FD00560007E5366 /* ViewController.swift */,
 				8DBA7C3D1FD00561007E5366 /* Main.storyboard */,
@@ -123,6 +130,15 @@
 				8DBA7C5B1FD00561007E5366 /* Info.plist */,
 			);
 			path = IconChangeSampleUITests;
+			sourceTree = "<group>";
+		};
+		8DBA7C671FD006E9007E5366 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA7C6E1FD00710007E5366 /* redIcon60@2x.png */,
+				8DBA7C6C1FD0070B007E5366 /* redIcon60@3x.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DBA7C441FD00561007E5366 /* LaunchScreen.storyboard in Resources */,
+				8DBA7C6D1FD0070B007E5366 /* redIcon60@3x.png in Resources */,
+				8DBA7C6F1FD00710007E5366 /* redIcon60@2x.png in Resources */,
 				8DBA7C411FD00561007E5366 /* Assets.xcassets in Resources */,
 				8DBA7C3F1FD00561007E5366 /* Main.storyboard in Resources */,
 			);
@@ -300,6 +318,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8DBA7C3E1FD00561007E5366 /* Base */,
+				8DBA7C701FD01B31007E5366 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8DBA7C431FD00561007E5366 /* Base */,
+				8DBA7C711FD01B31007E5366 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -429,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RQW6JG2KQ;
 				INFOPLIST_FILE = IconChangeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideyuki.okuni.IconChangeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RQW6JG2KQ;
 				INFOPLIST_FILE = IconChangeSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideyuki.okuni.IconChangeSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

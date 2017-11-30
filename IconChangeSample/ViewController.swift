@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pressDef(_ sender: Any) {
+        if #available(iOS 10.3, *) {
+            UIApplication.shared.setAlternateIconName(nil, completionHandler: nil)
+        }
+    }
 
+    @IBAction func pressRed(_ sender: Any) {
+        if #available(iOS 10.3, *) {
+            UIApplication.shared.setAlternateIconName("redIcon60", completionHandler: nil)
+        }
+    }
 }
 
